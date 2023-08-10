@@ -18,4 +18,4 @@ FROM program JOIN program_subject ON program.program_id = program_subject.progra
              JOIN program_enrollee ON enrollee.enrollee_id = program_enrollee.enrollee_id
 WHERE enrollee_subject.result < program_subject.min_result 
       AND program_enrollee.program_id = program_subject.program_id
-ORDER BY 1,2
+ORDER BY 1,2;
